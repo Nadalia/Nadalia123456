@@ -5,11 +5,24 @@ To change this template file, choose Tools | Templates
 and open the template in the editor.
 -->
 
-<!DOCTYPE arg PUBLIC '-//Apache Software Foundation//DTD Commons Validator Rules Configuration 1.1.3//EN' 'null'>
+<!DOCTYPE arg PUBLIC "dtdFile.dtd">
 
 <arg>
     <restaurant>
-        <date></date>
+        <date>
+            <order>
+                <officiant firstname = "peter"
+                           secondname = "petrov">
+                </officiant>
+                <item name = "coffee"
+                      cost = "20.0">
+                </item>
+                <item name = "cheesecake"
+                      cost = "15.0">
+                </item>
+                <totalcost>"35.0"</totalcost>
+            </order>
+        </date>
     </restaurant>
     
 </arg>
