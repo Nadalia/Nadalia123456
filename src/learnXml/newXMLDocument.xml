@@ -1,26 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
--->
-
-<!DOCTYPE arg PUBLIC "dtdFile.dtd">
-
+<!DOCTYPE arg SYSTEM "dtdFile.dtd">
 <arg>
     <restaurant>
-        <date>
+        <date day = "01" month = "04" year = "2019">
+            
             <order>
-                <officiant firstname = "peter"
-                           secondname = "petrov">
+                <officiant firstname = "ivan"
+                           secondname = "ivanov">
                 </officiant>
-                <item name = "coffee"
-                      cost = "20.0">
+                <item name = "fried chicken"
+                      cost = "25.0">
                 </item>
-                <item name = "cheesecake"
-                      cost = "15.0">
+                <item name = "lemon tea"
+                      cost = "9.0">
                 </item>
-                <totalcost>"35.0"</totalcost>
+                <totalcost>"34.0"</totalcost>
             </order>
         </date>
     </restaurant>
