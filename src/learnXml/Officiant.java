@@ -11,8 +11,13 @@ package learnXml;
  */
 public class Officiant {
     
-   public static String firstName; 
-   public static String secondName;
+   public String firstName; 
+   public String secondName;
    
+   public Officiant(String firstName, String secondName){
+       this.firstName = firstName;
+       this.secondName = secondName;
+   }
 }
+
 
