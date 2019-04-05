@@ -1,22 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE arg SYSTEM "dtdFile.dtd">
-<arg>
+<!DOCTYPE restaurant SYSTEM "dtdFile.dtd">
     <restaurant>
         <date day = "01" month = "04" year = "2019">
             
             <order>
                 <officiant firstname = "ivan"
-                           secondname = "ivanov">
-                </officiant>
+                           secondname = "ivanov"></officiant>
                 <item name = "fried chicken"
-                      cost = "25.0">
-                </item>
+                      cost = "25.0"></item>
                 <item name = "lemon tea"
-                      cost = "9.0">
-                </item>
+                      cost = "9.0"></item>
                 <totalcost>"34.0"</totalcost>
             </order>
         </date>
     </restaurant>
-    
-</arg>
