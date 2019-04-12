@@ -33,11 +33,11 @@ public class XmlTask {
         SAXParserFactory factory = SAXParserFactory.newInstance();
         SAXParser parser = factory.newSAXParser();
         
-        OfficiantHandler handler = new OfficiantHandler();
-        parser.parse(xmlFile, handler);
+        OfficiantHandler officiantHandler = new OfficiantHandler();
+        parser.parse(xmlFile, officiantHandler);
         
         
-        for (Officiant o: handler.officiants){
+        for (Officiant o: officiantHandler.officiants){
             if(o.firstName.equals(oldName) && o.secondName.equals(oldSurname)){
                 o = new Officiant(newName, newSurname);
             }

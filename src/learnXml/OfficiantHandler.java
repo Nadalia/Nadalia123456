@@ -1,4 +1,3 @@
-
 package learnXml;
 
 import java.util.ArrayList;
@@ -6,10 +5,6 @@ import org.xml.sax.Attributes;
 import org.xml.sax.SAXException;
 import org.xml.sax.helpers.DefaultHandler;
 
-/**
- *
- * @author Пользователь
- */
 public class OfficiantHandler extends DefaultHandler{
     
     ArrayList<Officiant> officiants;
