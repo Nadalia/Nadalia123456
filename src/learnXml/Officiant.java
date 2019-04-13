@@ -5,6 +5,8 @@
  */
 package learnXml;
 
+import java.util.ArrayList;
+
 /**
  *
  * @author stud
@@ -13,6 +15,7 @@ public class Officiant {
     
    public String firstName; 
    public String secondName;
+   public ArrayList<Order> orders;
    
    public Officiant(String firstName, String secondName){
        this.firstName = firstName;

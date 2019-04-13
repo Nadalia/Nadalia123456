@@ -2,6 +2,7 @@ package learnXml;
 
 import java.io.File;
 import java.io.IOException;
+import java.util.Calendar;
 import org.xml.sax.Attributes;
 import org.xml.sax.SAXException;
 import org.xml.sax.helpers.DefaultHandler;
@@ -41,8 +42,22 @@ public class XmlTask {
             if(o.firstName.equals(oldName) && o.secondName.equals(oldSurname)){
                 o = new Officiant(newName, newSurname);
             }
+        }   
+    }
+    public int earningsTotal(String officiantSecondName, Calendar calendar) 
+    throws ParserConfigurationException, SAXException, IOException{
+        
+        SAXParserFactory factory = SAXParserFactory.newInstance();
+        SAXParser parser = factory.newSAXParser();
+        
+        DateHandler dateHandler = new DateHandler();
+        parser.parse(xmlFile, dateHandler);
+        
+        for (Date d: dateHandler.dates){
+            if(d.calendar == calendar && d.officiant.secondName == officiantSecondName){
+                
+            }
         }
- 
 }
     
     
